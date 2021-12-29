@@ -1,0 +1,34 @@
+{
+  "name": "screener.io.trial",
+  "version": "0.0.1",
+  "description": "Test code for screener.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "test-storybook": "screener-storybook --conf screener.config.js",
+    "webdriverio": "node simple-test.js",
+    "webdriverio-changes": "APPLY_CHANGES=true node simple-test.js",
+    "test:mocha": "mocha -t 0 simple-mocha-test.js",
+    "test:mocha-changes": "APPLY_CHANGES=true mocha -t 0 simple-mocha-test.js",
+    "test:jest": "jest --testTimeout=60000",
+    "test:jest-changes": "APPLY_CHANGES=true jest --testTimeout=60000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantshukla-qa/screener.io.trial.git"
+  },
+  "author": "prashant shukla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashantshukla-qa/screener.io.trial/issues"
+  },
+  "homepage": "https://github.com/prashantshukla-qa/screener.io.trial#readme",
+  "dependencies": {
+    "webdriverio": "^7.16.10"
+  },
+  "devDependencies": {
+    "screener-storybook": "^0.22.0",
+    "jest": "^27.4.0",
+    "mocha": "^9.1.3"
+  }
+}
